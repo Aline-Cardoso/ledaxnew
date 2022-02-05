@@ -1,0 +1,406 @@
+/*//BOTÃO LATERAL*/
+
+/*------------------------------------------------------------
+- Whatsapp Lateral
+--------------------------------------------------------------*/
+.btn-whats {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 99999;
+    display: block;
+}
+
+button.pulse-button {
+    position: relative;
+    width: 51px;
+    height: 51px;
+    padding: 0 15px;
+    border: none;
+    text-align: left;
+    box-shadow: 0 0 0 0 #69da83;
+    border-radius: 50px;
+    background:#2f2c86;
+    background-image: -webkit-linear-gradient(top, #28a745,#23582f);
+    background-image: -moz-linear-gradient(top, #28a745,#23582f);
+    background-image: -ms-linear-gradient(top, #28a745,#23582f);
+    background-image: -o-linear-gradient(top, #28a745,#23582f);
+    background-image: linear-gradient(to bottom,#28a745,#23582f);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.16, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.16, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.16, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.16, 0, 0, 1);
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+button.pulse-button:hover {
+    width: 201px;
+    border-radius: 50px;
+    background:#28a5e1 !important;
+    background-image: -webkit-linear-gradient(top, #23582f,#28a745) !important;
+    background-image: -moz-linear-gradient(top, #23582f,#28a745) !important;
+    background-image: -ms-linear-gradient(top, #23582f,#28a745) !important;
+    background-image: -o-linear-gradient(top, #23582f,#28a745) !important;
+    background-image: linear-gradient(to bottom,#23582f,#28a745) !important;
+}
+button.pulse-button i {
+    color: #ffffff;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 52px;
+}
+button.pulse-button strong {
+    visibility: hidden;
+    color: #FFF;
+    font-size: 0px;
+    font-weight: normal!important;
+    margin: 2px 0 0 5px;
+    line-height: 25px;
+    -webkit-transition: font-size .15s ease-in-out;
+    transition: font-size .15s ease-in-out;
+    transition-delay: .05s;
+}
+
+button.pulse-button:hover > strong {
+    font-size: 14px;
+    visibility: visible;
+
+}
+button.pulse-button:focus {
+    outline: none;
+}
+
+@-webkit-keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px rgba(217, 0, 0, 0);
+    }
+}
+@-moz-keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px rgba(217, 0, 0, 0);
+    }
+}
+@-ms-keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px rgba(217, 0, 0, 0);
+    }
+}
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px rgba(217, 0, 0, 0);
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .btn-whats {
+        position: fixed;
+        bottom: 15px;
+        left: 15px;
+        z-index: 999999999;
+        display: block;
+    }
+}
+
+/*//BOTÃO LATERAL*/
+
+/*------------------------------------------------------------
+- Tabela - ONDE ESTAMOS & DEMAIS ESTADOS
+--------------------------------------------------------------*/
+
+.title-regioes {
+    padding-top: 10px;
+}
+
+.container .tabs {
+    width: 100%;
+    display: table;
+    clear: both;
+}
+.tab-content {
+    border: none;
+    padding: 12px 16px;
+}
+.tab-content p {
+    margin-bottom: 15px;
+}
+.tab-content p:last-child {
+    margin-bottom: 0;
+}
+
+.regioes-tabs {
+    padding: 0; 
+    margin: 0; 
+    display: inline-block;
+}
+.regioes-tabs li {
+    width: 50%;
+    font-size: 13px;
+    float: left;
+    list-style-type: none;
+}
+
+.nav>li>a {
+    padding: 10px 15px;
+}
+
+.nav-tabs>li>a:hover{
+   border-color: #eee #eee #ddd;   
+}
+
+.nav>li>a:hover{
+    text-decoration: none;
+    background-color: #eee;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    background: #ededed;}
+
+    @media screen and (max-width: 479px) {
+        .regioes-tabs li {
+            width: 100%;
+            font-size: 13px;
+            float: left;
+            list-style-type: none;
+            }}
+
+            .tabs .nav-tabs .nav-link {
+                float: left;
+                width: calc(100%/7);
+                text-align: center;
+            }
+
+
+            @media screen and (max-width: 479px) {
+                .tabs .nav-tabs .nav-link {float: none;width:100%;}}
+
+                .tags{
+                    font-size:10px !important;
+                    line-height: 10px;
+                    border: solid 1px #ccc;
+                    padding:5px;
+                    text-align: justify;
+                }
+
+                ul.tags {
+                    margin: 0px;
+                    list-style: none;
+                }
+                ul.tags li{
+                    display: inline-flex;
+                    margin: 0px 5px;
+                }
+
+/*--------------------------------------------------------------
+- Botão de Redes Sociais Conteudo
+--------------------------------------------------------------*/
+.redes-sociais-conteudo {
+    position: relative;
+    float: right;
+    font-family: 'blank';
+}
+.redes-sociais-conteudo .facebook,
+.redes-sociais-conteudo .twitter {
+    min-width: 35px;
+    padding: 9px 7px;
+    margin: 1px;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    line-height: 1.5em;
+    color: #FFF;
+    font: 14px Arial;
+    font-weight: bold;
+    font-weight: normal;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    border: 1px solid transparent;
+    z-index: 2;
+    border-radius: 50%;
+}
+.redes-sociais-conteudo .fa-google-plus:before,
+.redes-sociais-conteudo .fa-twitter:before {
+    color: #FFF;
+    font-size: 1em;
+}
+.redes-sociais-conteudo a.facebook {
+    color: #FFF;
+    background-color: #3B5998;
+}
+.redes-sociais-conteudo a.facebook:hover {
+    background-color: #fff;
+    border: 1px solid #DDD;
+}
+.redes-sociais-conteudo a.facebook:hover .fa-facebook-f:before {
+    color: #3B5998;
+}
+.redes-sociais-conteudo a.twitter {
+    color: #FFF;
+    background-color: #00ACED;
+}
+.redes-sociais-conteudo a.twitter:hover {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+}
+.redes-sociais-conteudo a.twitter:hover .fa-twitter:before {
+    color:  #00ACED;
+}
+
+
+/*--------------------------------------------------------------
+- FIM Botão de Redes Sociais Conteudo
+--------------------------------------------------------------*/
+
+
+.icon-supermercado:before {
+    content: url(img/cart.png);
+}
+
+@media screen and (max-width: 479px) {
+    .top-bar-oculto {
+        display: none;
+    }
+    .video-institucional {
+        width: 100%;
+    }
+}
+
+.card-background-image-hover .card-body:hover {
+    background-color: rgb(255 255 255 / 22%);
+}
+
+.turquesa {
+    color: rgb(0, 129, 145) !important;
+}
+
+.background-turquesa {
+    background-color: rgb(0, 129, 145) !important;
+}
+
+.local {
+    background-color: #034154;
+    border-radius: 2px;
+    float: left;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 0px 11px -18px 0px;
+    padding: 2px 12px 1px;
+    text-transform: uppercase;
+    line-height: 2.3;
+    color: #fff;
+}
+
+.categoria {
+    background-color: #008191;
+    border-radius: 2px;
+    float: left;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 0px 11px -18px 0px;
+    padding: 2px 12px 1px;
+    text-transform: uppercase;
+    line-height: 2.3;
+    color: #fff;
+}
+
+@media screen and (max-width: 370px) and (min-width: 320px) {
+    .categoria {
+        margin: 15px 11px -18px 0px !important;
+        }}
+
+        @media screen and (max-width: 375px) and (min-width: 320px) {
+            .categoria.marginperson {margin: 15px 11px -18px 0px !important;}}
+
+            @media screen and (max-width: 400px) and (min-width: 320px) {
+                .categoria.marginvitoria {margin: 15px 11px -18px 0px !important;}}
+
+                .borda-modelo-negocio{
+                    border-right: 2px #fff solid;
+                }
+
+                .altura-card-financiamento{
+                    height: 199px;
+                }
+
+                @media screen and (max-width: 479px) {
+                    .borda-modelo-negocio{
+                        border-right: 0px #fff solid;
+                    }
+                    .altura-card-financiamento{
+                        height: 356px;
+                    }
+                }
+
+                .custom-box-shadow-1 {
+                    box-shadow: 0 0 31px -5px rgba(0,0,0,.14)!important;    
+                }
+
+                .custom-card-style-1 {
+                    transition: ease transform 300ms;    
+                }
+
+                .custom-card-style-1:hover {
+                  transform: scale(1.03);  
+              }
+
+              .thumb-personalizada.thumb-info.thumb-info-centered-info:hover .thumb-info-title {
+               background: #fff !important;  
+               padding: 5px; 
+           }
+
+           .imgdesktop {display: block;}
+           .imgmobile {display: none;}
+
+           @media screen and (max-width: 479px) {
+            .imgdesktop {display: none;}
+            .imgmobile {display: block;width: 100%;}
+        }
+
+
+        .alturacoluna {height: 840px !important;}
+
+        @media screen and (max-width: 479px) {
+            .alturacoluna {height: 112vh !important; margin-bottom: 20px;}
+        }
+
+        .width150 {width: 150%; margin-top: 20%;}
+
+        @media screen and (max-width: 479px) {
+            .width150 {width: 100%;margin-top: 2%;}}
+
+
+            input::placeholder {
+              color: #212529 !important;
+          }
+
+          textarea::placeholder {
+              color: #212529 !important;
+          }
+
+          .menu-produtos {
+            position: absolute;
+            left: 0;
+            margin: 0;
+            height: 400px;
+            width: 450px;
+            z-index: 7;
+            background: #fff;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
